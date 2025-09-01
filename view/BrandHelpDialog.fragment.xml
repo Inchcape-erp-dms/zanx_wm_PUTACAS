@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<SelectDialog
+		title="Brand"
+		class="sapUiPopupWithPadding"
+		items="{/BrandSet}"
+		search="_handleBrandHelpSearch"
+		confirm="_handleValueHelpClose"
+		cancel="_handleValueHelpClose">
+		<StandardListItem
+			title="{BrandCode}"
+			description="{BrandName}" />
+	</SelectDialog>
+</core:FragmentDefinition>
